@@ -13,3 +13,17 @@ plt.subplot(2, 1, 1) plt.plot(x,y_sin)
 plt.subplot(2, 1, 2)
 
 plt.show()
+
+
+
+#images
+
+import numpy as np
+
+import matplotlib.image as img import matplotlib.pyplot as plt
+
+tstimg = img.imread('cycle3/cat.jpeg") plt.subplot(1, 2, 1)
+
+plt.imshow(tstimg)
+
+plt.subplot(1, 2, 2) plt.imshow(tstimg)
