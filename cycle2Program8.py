@@ -1,0 +1,11 @@
+import pandas as pd
+orders = pd.read_table('http://bit.ly/movieusers')
+print("Overview of dataframe : ")
+print(orders.head())
+print("Shape : ",orders.shape)
+print()
+user_cols = ['user_id', 'age', 'gender', 'occupation', 'zip_code']
+users = pd.read_table('http://bit.ly/movieusers', sep='|', header=None,
+names=user_cols)
+print("Dataframe after modifying the default parameter values for read_table: ")
+print(users.head())
